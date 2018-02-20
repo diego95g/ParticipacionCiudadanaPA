@@ -29,4 +29,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void partido(View view) {
+        Intent i = new Intent(this, partido.class );
+        startActivity(i);
+    }
+    public void recinto(View view) {
+        Intent i = new Intent(this, partido.class );
+        startActivity(i);
+    }
 }

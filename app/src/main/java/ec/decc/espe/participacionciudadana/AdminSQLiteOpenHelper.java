@@ -18,7 +18,8 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table region(codigoReg INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,nombreReg text)");
         db.execSQL("create table provincia(codigoProv INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,nombreProv text)");
-
+        db.execSQL("create table partido(codigoPartido INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,nombrePartido text)");
+       db.execSQL("create table recinto(codigoRecinto INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,nombreRecinto text)");
     }
 
     @Override

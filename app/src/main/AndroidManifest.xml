@@ -20,7 +20,11 @@
         <activity android:name=".Provincia" />
         <activity android:name=".Region_" />
         <activity android:name=".ListViewRegion" />
-        <activity android:name=".ListViewProvincia"></activity>
+        <activity android:name=".ListViewProvincia" />
+        <activity android:name=".partido" />
+        <activity android:name=".ListViewPartido" />
+        <activity android:name=".Recinto" />
+        <activity android:name=".ListViewRecinto"></activity>
     </application>
 
 </manifest>

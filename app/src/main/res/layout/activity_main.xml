@@ -9,6 +9,7 @@
     <RelativeLayout
         android:layout_width="368dp"
         android:layout_height="495dp"
+        android:backgroundTint="@android:color/holo_blue_light"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
@@ -42,5 +43,30 @@
             android:layout_marginTop="29dp"
             android:onClick="ciudadano"
             android:text="Ciudadano" />
+
+        <Button
+            android:id="@+id/buttonPartido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button2"
+            android:layout_marginBottom="78dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:onClick="partido"
+            android:text="Partido" />
+
+        <Button
+            android:id="@+id/buttonRecinto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonPartido"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/buttonPartido"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:onClick="recinto"
+            android:text="Recinto" />
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
