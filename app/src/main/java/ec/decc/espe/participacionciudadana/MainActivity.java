@@ -28,5 +28,12 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, FormCiudadano.class );
         startActivity(i);
     }
-
+    public void parroquia(View view) {
+        Intent i = new Intent(this, Parroquia.class );
+        startActivity(i);
+    }
+    public void canton(View view) {
+        Intent i = new Intent(this, Canton.class );
+        startActivity(i);
+    }
 }

@@ -20,7 +20,11 @@
         <activity android:name=".Provincia" />
         <activity android:name=".Region_" />
         <activity android:name=".ListViewRegion" />
-        <activity android:name=".ListViewProvincia"></activity>
+        <activity android:name=".ListViewProvincia" />
+        <activity android:name=".Parroquia" />
+        <activity android:name=".Canton" />
+        <activity android:name=".list_view_parroquia" />
+        <activity android:name=".list_view_canton" />
     </application>
 
 </manifest>
