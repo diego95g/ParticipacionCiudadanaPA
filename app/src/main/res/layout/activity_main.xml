@@ -13,13 +13,22 @@
         tools:layout_editor_absoluteY="8dp">
 
         <Button
-            android:id="@+id/btnRegion"
+            android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="132dp"
-            android:onClick="region"
-            android:text="Regiones" />
+            android:layout_centerVertical="true"
+            android:onClick="provincia"
+            android:text="Provincia" />
+
+        <Button
+            android:id="@+id/btnRegions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="41dp"
+            android:onClick="regions"
+            android:text="Region" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

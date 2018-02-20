@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FormCiudadano"></activity>
+        <activity android:name=".FormCiudadano" />
+        <activity android:name=".Provincia" />
+        <activity android:name=".Region_"></activity>
     </application>
 
 </manifest>

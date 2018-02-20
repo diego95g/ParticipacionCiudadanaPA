@@ -15,10 +15,10 @@ public class FormCiudadano extends AppCompatActivity {
         setContentView(R.layout.activity_form_ciudadano);
     }
     public void alta(View v) {
-        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
+       /* AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
                 "administracion", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
-        String cod = etC1.getText().toString();
+       String cod = etC1.getText().toString();
         String proov= etC2.getText().toString();
         String pre = etC3.getText().toString();
         ContentValues registro = new ContentValues();
@@ -32,5 +32,6 @@ public class FormCiudadano extends AppCompatActivity {
         etC3.setText("");
         Toast.makeText(this, "Se cargaron los datos del proveedor",
                 Toast.LENGTH_SHORT).show();
+               */
     }
 }

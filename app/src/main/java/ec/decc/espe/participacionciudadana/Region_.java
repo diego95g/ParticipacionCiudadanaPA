@@ -9,22 +9,23 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Region extends AppCompatActivity {
+public class Region_ extends AppCompatActivity {
     private EditText etRegion;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_region);
+        setContentView(R.layout.activity_region_);
         etRegion=(EditText)findViewById(R.id.etRegion);
     }
 
     public void guardar(View v) {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
-                "participacion", null, 1);
+                "participacion1", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
         String name = etRegion.getText().toString();
         ContentValues registro = new ContentValues();
-        registro.put("nombre", name);
+        registro.put("nombreReg", name);
         bd.insert("region", null, registro);
         bd.close();
         Toast.makeText(this, "Se cargaron los datos de la region",
@@ -33,11 +34,11 @@ public class Region extends AppCompatActivity {
 
     public void consultapordescripcion(View v) {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
-                "participacion", null, 1);
+                "participacion1", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
         String descri = etRegion.getText().toString();
         Cursor fila = bd.rawQuery(
-                "select codigo,nombre from region where nombre='" + descri +"'", null);
+                "select codigoReg,nombreReg from region where nombreReg='" + descri +"'", null);
         if (fila.moveToFirst()) {
             etRegion.setText(fila.getString(1));
         } else
