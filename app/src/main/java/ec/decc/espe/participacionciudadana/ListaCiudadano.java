@@ -1,0 +1,13 @@
+package ec.decc.espe.participacionciudadana;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class ListaCiudadano extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_lista_ciudadano);
+    }
+}

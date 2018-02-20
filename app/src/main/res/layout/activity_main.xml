@@ -16,8 +16,10 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/btnRegions"
+            android:layout_alignStart="@+id/btnRegions"
+            android:layout_below="@+id/btnRegions"
+            android:layout_marginTop="27dp"
             android:onClick="provincia"
             android:text="Provincia" />
 
@@ -25,10 +27,20 @@
             android:id="@+id/btnRegions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/button2"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="41dp"
+            android:layout_marginTop="48dp"
             android:onClick="regions"
             android:text="Region" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:onClick="ciudadano"
+            android:text="Ciudadano" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
