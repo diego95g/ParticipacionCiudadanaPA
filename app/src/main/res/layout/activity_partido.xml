@@ -16,12 +16,10 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="144dp"
-            android:layout_marginStart="144dp"
-            android:layout_marginTop="43dp"
+            android:layout_marginTop="91dp"
+            android:layout_toEndOf="@+id/btnSave"
+            android:layout_toRightOf="@+id/btnSave"
             android:text="Partido" />
 
         <EditText
@@ -46,6 +44,7 @@
             android:layout_alignStart="@+id/etRecinto"
             android:layout_below="@+id/etRecinto"
             android:layout_marginTop="47dp"
+            android:backgroundTint="@android:color/holo_orange_light"
             android:onClick="guardarPartido"
             android:text="Guardar" />
 
@@ -57,6 +56,7 @@
             android:layout_alignStart="@+id/btnSave"
             android:layout_below="@+id/btnSave"
             android:layout_marginTop="30dp"
+            android:backgroundTint="@android:color/holo_blue_light"
             android:onClick="listaPartido"
             android:text="Lista Partidos" />
 
@@ -68,8 +68,22 @@
             android:layout_alignStart="@+id/btnFind"
             android:layout_below="@+id/btnFind"
             android:layout_marginTop="39dp"
+            android:backgroundTint="@android:color/holo_green_light"
             android:onClick="deletePartido"
             android:text="Borrar Registros" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/etRecinto"
+            android:layout_alignEnd="@+id/etRecinto"
+            android:layout_alignRight="@+id/etRecinto"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@mipmap/espelogo" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

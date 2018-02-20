@@ -12,25 +12,32 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
-        <ListView
-            android:id="@+id/lista"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="86dp" >
+            android:orientation="vertical">
 
-        </ListView>
+            <TextView
+                android:id="@+id/txtLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"
+                android:text="Lista de Recintos" />
 
-        <TextView
-            android:id="@+id/txtLista"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="27dp"
-            android:text="Lista de Recintos" />
+            <ListView
+                android:id="@+id/lista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="86dp">
+
+            </ListView>
+        </LinearLayout>
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
