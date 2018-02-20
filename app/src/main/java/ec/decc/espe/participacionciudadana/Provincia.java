@@ -18,7 +18,7 @@ public class Provincia extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provincia);
-        etProvincia=(EditText)findViewById(R.id.etProvincia);
+        etProvincia=(EditText)findViewById(R.id.etRecinto);
     }
 
     public void guardar(View v) {
