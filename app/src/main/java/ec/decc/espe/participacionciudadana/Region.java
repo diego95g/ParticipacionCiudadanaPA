@@ -24,8 +24,6 @@ public class Region extends AppCompatActivity {
         SQLiteDatabase bd = admin.getWritableDatabase();
         String name = etRegion.getText().toString();
         ContentValues registro = new ContentValues();
-        String cod=null;
-        registro.put("codigo", cod);
         registro.put("nombre", name);
         bd.insert("region", null, registro);
         bd.close();
