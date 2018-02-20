@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".FormCiudadano" />
         <activity android:name=".Provincia" />
-        <activity android:name=".Region_"></activity>
+        <activity android:name=".Region_" />
+        <activity android:name=".ListaCiudadano"></activity>
     </application>
 
 </manifest>

@@ -5,33 +5,37 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class FormCiudadano extends AppCompatActivity {
+
+    private EditText etCCedula;
+    private EditText etCNombre;
+    private EditText etCResidencia;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_ciudadano);
+        etCCedula=(EditText)findViewById(R.id.etCCedula);
+        etCNombre=(EditText)findViewById(R.id.etCNombre);
+        etCResidencia=(EditText)findViewById(R.id.etCResidencia);
     }
-    public void alta(View v) {
-       /* AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
-                "administracion", null, 1);
+    public void guardarCiudadano(View v) {
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
+                "participacion1", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
-       String cod = etC1.getText().toString();
-        String proov= etC2.getText().toString();
-        String pre = etC3.getText().toString();
+        String cedula = etCCedula.getText().toString();
+        String  nombre= etCNombre.getText().toString();
+        String  residencia= etCResidencia.getText().toString();
         ContentValues registro = new ContentValues();
-        registro.put("codigo", cod);
-        registro.put("proveedor", proov);
-        registro.put("precio", pre);
-        bd.insert("proveedor", null, registro);
+        registro.put("ciu_cedula", cedula);
+        bd.insert("ciudadano", null, registro);
         bd.close();
-        etC1.setText("");
-        etC2.setText("");
-        etC3.setText("");
-        Toast.makeText(this, "Se cargaron los datos del proveedor",
+        Toast.makeText(this, "Se cargaron los datos del ciudadano",
                 Toast.LENGTH_SHORT).show();
-               */
     }
+
+    
 }

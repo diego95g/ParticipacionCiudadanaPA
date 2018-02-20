@@ -24,4 +24,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void ciudadano(View view) {
+        Intent i = new Intent(this, FormCiudadano.class );
+        startActivity(i);
+    }
+
 }
