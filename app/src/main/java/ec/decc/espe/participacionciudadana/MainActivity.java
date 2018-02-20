@@ -29,4 +29,20 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+<<<<<<< HEAD
+    public void delegado(View view) {
+        Intent i = new Intent(this, Delegado.class );
+        startActivity(i);
+    }
+
+=======
+    public void partido(View view) {
+        Intent i = new Intent(this, partido.class );
+        startActivity(i);
+    }
+    public void recinto(View view) {
+        Intent i = new Intent(this, partido.class );
+        startActivity(i);
+    }
+>>>>>>> 0d99a4a8ae8bba59fbe0f6e7f2d4f499bec660f2
 }

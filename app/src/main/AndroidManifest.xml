@@ -21,7 +21,19 @@
         <activity android:name=".Region_" />
         <activity android:name=".ListViewRegion" />
         <activity android:name=".ListViewProvincia" />
+<<<<<<< HEAD
         <activity android:name=".ListViewCiudadano"></activity>
+=======
+<<<<<<< HEAD
+        <activity android:name=".Delegado" />
+        <activity android:name=".ListViewDelegado"></activity>
+=======
+        <activity android:name=".partido" />
+        <activity android:name=".ListViewPartido" />
+        <activity android:name=".Recinto" />
+        <activity android:name=".ListViewRecinto"></activity>
+>>>>>>> 0d99a4a8ae8bba59fbe0f6e7f2d4f499bec660f2
+>>>>>>> 5c8f600cdba8163d6668ed4cd4bcb1bb45d348e0
     </application>
 
 </manifest>
