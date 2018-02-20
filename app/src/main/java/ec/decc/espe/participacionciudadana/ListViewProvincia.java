@@ -37,7 +37,7 @@ public class ListViewProvincia extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,provincia);
         lv1.setAdapter(adapter);}
         else{
-            Toast.makeText(this, "No existen provincias registradas",
+            Toast.makeText(this, "Aun no existen provincias registradas",
                     Toast.LENGTH_SHORT).show();
 
         }

@@ -39,7 +39,7 @@ public class ListViewRegion extends AppCompatActivity {
         lv1.setAdapter(adapter);}
         else{
 
-            Toast.makeText(this, "No existen regiones registradas",
+            Toast.makeText(this, "Aun no existen regiones registradas",
                     Toast.LENGTH_SHORT).show();
         }
 
