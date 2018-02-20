@@ -9,9 +9,70 @@
     <RelativeLayout
         android:layout_width="368dp"
         android:layout_height="495dp"
+        android:backgroundTint="@android:color/holo_blue_light"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
+<<<<<<< HEAD
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="centerInside"
+                app:srcCompat="@mipmap/participacion" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnRegions"
+                android:layout_alignStart="@+id/btnRegions"
+                android:layout_below="@+id/btnRegions"
+                android:layout_marginTop="30dp"
+                android:onClick="provincia"
+                android:text="Provincia" />
+
+            <Button
+                android:id="@+id/btnRegions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:onClick="regions"
+                android:text="Region" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:onClick="ciudadano"
+                android:text="Ciudadano" />
+
+            <Button
+                android:id="@+id/btnDelegado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button"
+                android:layout_alignStart="@+id/button"
+                android:layout_below="@+id/button"
+                android:layout_marginTop="20dp"
+                android:onClick="delegado"
+                android:text="DELEGADO" />
+
+        </LinearLayout>
+=======
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
@@ -44,6 +105,7 @@
             android:text="Ciudadano" />
 
         <Button
+<<<<<<< HEAD
             android:id="@+id/btnParroquia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,5 +126,31 @@
             android:layout_marginTop="33dp"
             android:onClick="canton"
             android:text="Canton" />
+=======
+            android:id="@+id/buttonPartido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button2"
+            android:layout_marginBottom="78dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:onClick="partido"
+            android:text="Partido" />
+
+        <Button
+            android:id="@+id/buttonRecinto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonPartido"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/buttonPartido"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:onClick="recinto"
+            android:text="Recinto" />
+>>>>>>> 0d99a4a8ae8bba59fbe0f6e7f2d4f499bec660f2
+
+>>>>>>> ec1e3b002eaef0538820d690ddec152249a1149b
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

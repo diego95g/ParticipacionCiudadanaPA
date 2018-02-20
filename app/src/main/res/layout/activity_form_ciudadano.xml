@@ -10,69 +10,88 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="90dp"
-            android:layout_height="40dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="21dp"
-            android:text="ciudadano" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnCreateC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/etCResidencia"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="51dp"
-            android:onClick="guardarCiudadano"
-            android:text="Ingresar Ciudadano"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="212dp" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:gravity="center"
+                android:text="INGRESE EL CIUDADANO" />
 
-        <Button
-            android:id="@+id/btnReadC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnCreateC"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="31dp"
-            android:text="Visualizar Ciudadanos" />
+            <EditText
+                android:id="@+id/etCCedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="83dp"
+                android:ems="10"
+                android:hint="cédula ciudadano"
+                android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/etCCedula"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="83dp"
-            android:ems="10"
-            android:hint="cédula ciudadano"
-            android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/etCNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/etCCedula"
+                android:layout_alignRight="@+id/etCCedula"
+                android:layout_below="@+id/etCCedula"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:hint="nombre ciudadano"
+                android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/etCNombre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/etCCedula"
-            android:layout_alignRight="@+id/etCCedula"
-            android:layout_below="@+id/etCCedula"
-            android:layout_marginTop="11dp"
-            android:ems="10"
-            android:hint="nombre ciudadano"
-            android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/etCResidencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etCNombre"
+                android:layout_alignStart="@+id/etCNombre"
+                android:layout_below="@+id/etCNombre"
+                android:ems="10"
+                android:hint="residencia"
+                android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/etCResidencia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/etCNombre"
-            android:layout_alignStart="@+id/etCNombre"
-            android:layout_below="@+id/etCNombre"
-            android:ems="10"
-            android:hint="residencia"
-            android:inputType="textPersonName" />
+            <Button
+                android:id="@+id/btnReadC"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnCreateC"
+                android:layout_centerHorizontal="true"
+                android:onClick="listaCiud"
+                android:text="Visualizar Ciudadanos" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnCreateC"
+                android:layout_alignStart="@+id/btnCreateC"
+                android:layout_below="@+id/btnReadC"
+                android:layout_marginTop="25dp"
+                android:onClick="delete"
+                android:text="Borrar Registros" />
+
+            <Button
+                android:id="@+id/btnCreateC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etCResidencia"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:onClick="guardar"
+                android:text="Ingresar Ciudadano"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="212dp" />
+
+        </LinearLayout>
 
     </RelativeLayout>
 

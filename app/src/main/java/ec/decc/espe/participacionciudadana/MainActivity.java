@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, FormCiudadano.class );
         startActivity(i);
     }
+<<<<<<< HEAD
     public void parroquia(View view) {
         Intent i = new Intent(this, Parroquia.class );
         startActivity(i);
@@ -36,4 +37,23 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, Canton.class );
         startActivity(i);
     }
+=======
+
+<<<<<<< HEAD
+    public void delegado(View view) {
+        Intent i = new Intent(this, Delegado.class );
+        startActivity(i);
+    }
+
+=======
+    public void partido(View view) {
+        Intent i = new Intent(this, partido.class );
+        startActivity(i);
+    }
+    public void recinto(View view) {
+        Intent i = new Intent(this, partido.class );
+        startActivity(i);
+    }
+>>>>>>> 0d99a4a8ae8bba59fbe0f6e7f2d4f499bec660f2
+>>>>>>> ec1e3b002eaef0538820d690ddec152249a1149b
 }
