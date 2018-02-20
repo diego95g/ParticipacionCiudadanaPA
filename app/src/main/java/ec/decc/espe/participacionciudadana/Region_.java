@@ -1,6 +1,7 @@
 package ec.decc.espe.participacionciudadana;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -44,6 +45,22 @@ public class Region_ extends AppCompatActivity {
         } else
             Toast.makeText(this, "No existe una region con dicho nombre",
                     Toast.LENGTH_SHORT).show();
+        bd.close();
+    }
+
+    public void listaRegiones(View view) {
+        Intent i = new Intent(this, ListViewRegion.class );
+        startActivity(i);
+    }
+    public void delete(View view) {
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
+                "participacion1", null, 1);
+        SQLiteDatabase bd = admin.getWritableDatabase();
+
+        //Cursor fila = bd.rawQuery( "DELETE FROM provincia", null);
+        bd.delete("region", null, null);
+        Toast.makeText(this, "Se han borrado todos los registros de la tabla region",
+                Toast.LENGTH_SHORT).show();
         bd.close();
     }
 }
