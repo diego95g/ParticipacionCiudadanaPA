@@ -29,4 +29,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void delegado(View view) {
+        Intent i = new Intent(this, Delegado.class );
+        startActivity(i);
+    }
+
 }
