@@ -13,7 +13,6 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
-<<<<<<< HEAD
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -30,7 +29,7 @@
                 app:srcCompat="@mipmap/participacion" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/btnRegions"
@@ -51,7 +50,7 @@
                 android:text="Region" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/button2"
@@ -70,64 +69,60 @@
                 android:layout_marginTop="20dp"
                 android:onClick="delegado"
                 android:text="DELEGADO" />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnRegions"
+                android:layout_alignStart="@+id/btnRegions"
+                android:layout_below="@+id/btnRegions"
+                android:layout_marginTop="27dp"
+                android:onClick="provincia"
+                android:text="Provincia" />
 
+            <Button
+                android:id="@+id/btnRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:onClick="regions"
+                android:text="Region" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:onClick="ciudadano"
+                android:text="Ciudadano" />
+
+            <Button
+                android:id="@+id/buttonPartido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/button2"
+                android:layout_marginBottom="78dp"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:onClick="partido"
+                android:text="Partido" />
+
+            <Button
+                android:id="@+id/buttonRecinto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/buttonPartido"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/buttonPartido"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:onClick="recinto"
+                android:text="Recinto" />
         </LinearLayout>
-=======
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/btnRegions"
-            android:layout_alignStart="@+id/btnRegions"
-            android:layout_below="@+id/btnRegions"
-            android:layout_marginTop="27dp"
-            android:onClick="provincia"
-            android:text="Provincia" />
-
-        <Button
-            android:id="@+id/btnRegions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="48dp"
-            android:onClick="regions"
-            android:text="Region" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="29dp"
-            android:onClick="ciudadano"
-            android:text="Ciudadano" />
-
-        <Button
-            android:id="@+id/buttonPartido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/button2"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/button2"
-            android:layout_marginBottom="78dp"
-            android:backgroundTint="@android:color/holo_orange_dark"
-            android:onClick="partido"
-            android:text="Partido" />
-
-        <Button
-            android:id="@+id/buttonRecinto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/buttonPartido"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/buttonPartido"
-            android:layout_marginBottom="10dp"
-            android:backgroundTint="@android:color/holo_blue_bright"
-            android:onClick="recinto"
-            android:text="Recinto" />
->>>>>>> 0d99a4a8ae8bba59fbe0f6e7f2d4f499bec660f2
-
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

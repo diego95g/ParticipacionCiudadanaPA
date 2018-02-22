@@ -48,11 +48,4 @@ public class Recinto extends AppCompatActivity {
                 Toast.LENGTH_SHORT).show();
         bd.close();
     }
-
-
-
-
-
-
-
 }
