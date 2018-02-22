@@ -7,8 +7,9 @@
     android:layout_height="match_parent"
     tools:context="ec.decc.espe.participacionciudadana.ListViewProvincia">
 
-    <RelativeLayout
+
         android:layout_width="368dp"
+<<<<<<< HEAD
         android:layout_height="495dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp"
@@ -18,10 +19,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+=======
+        android:layout_height="495dp">
+>>>>>>> 23276f7124fc988f1583ba348c9d6387e82777fd
 
         <ListView
+<<<<<<< HEAD
+            android:id="@+id/lista1"
+            android:layout_width="match_parent"
+=======
             android:id="@+id/lista"
             android:layout_width="wrap_content"
+>>>>>>> ec1e3b002eaef0538820d690ddec152249a1149b
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -36,7 +45,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="27dp"
             android:text="Lista de Provincias" />
+<<<<<<< HEAD
         </LinearLayout>
 
     </RelativeLayout>
+=======
+>>>>>>> 23276f7124fc988f1583ba348c9d6387e82777fd
 </android.support.constraint.ConstraintLayout>

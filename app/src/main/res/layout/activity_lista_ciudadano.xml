@@ -8,6 +8,7 @@
 
     <RelativeLayout
         android:layout_width="368dp"
+<<<<<<< HEAD
         android:layout_height="495dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp"
@@ -17,17 +18,33 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+=======
+        android:layout_height="495dp">
+>>>>>>> 23276f7124fc988f1583ba348c9d6387e82777fd
 
-        <ListView
-            android:id="@+id/listCiudadano"
-            android:layout_width="380dp"
-            android:layout_height="520dp"
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+<<<<<<< HEAD
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp" />
         </LinearLayout>
 
     </RelativeLayout>
+=======
+            android:layout_marginTop="37dp"
+            android:text="Lista de Ciudadanos registrados" />
+>>>>>>> 23276f7124fc988f1583ba348c9d6387e82777fd
 
+        <ListView
+            android:id="@+id/listaCiu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="79dp" />
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
