@@ -17,7 +17,7 @@ public class ListViewProvincia extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_provincia);
 
-       lv1 =(ListView)findViewById(R.id.lista);
+       lv1 =(ListView)findViewById(R.id.lista1);
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
                 "participacion1", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();

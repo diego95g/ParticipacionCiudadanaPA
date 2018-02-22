@@ -8,38 +8,38 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class ListaCiudadano extends AppCompatActivity {
+public class list_view_parroquia extends AppCompatActivity {
 
-    private ListView lv1;
-
-    private String[] ciudadano = null;
+    private ListView listaVistaParroquia;
+    private String[] parroquia = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_ciudadano);
-        /*lv1 =(ListView)findViewById(R.id.listaCiu);
+        setContentView(R.layout.activity_list_view_parroquia);
+
+        listaVistaParroquia =(ListView)findViewById(R.id.listaParroquia);
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
-                "ciudadano", null, 1);
+                "parroq", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
         //Cursor fila = bd.rawQuery( " select nombreReg from region " , null);
-        String [] campos = {"nombreCiud"};
-        Cursor c = bd.query("ciudadano", campos, null, null, null, null, null);
+        String [] campos = {"nombreParr"};
+        Cursor c = bd.query("parroquia", campos, null, null, null, null, null);
         if (c.moveToFirst()) {
-            ciudadano = new String[c.getCount()];
+            parroquia = new String[c.getCount()];
             int cont=0;
             do {
-                ciudadano[cont]= c.getString(0);
+                parroquia[cont]= c.getString(0);
                 cont=cont+1;
             } while(c.moveToNext());
         }
         bd.close();
-        if(ciudadano!=null){
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,ciudadano);
-            lv1.setAdapter(adapter);}
+        if(parroquia!=null){
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,parroquia);
+            listaVistaParroquia.setAdapter(adapter);}
         else{
-
-            Toast.makeText(this, "Aun no existen ciudadanos registrados",
+            Toast.makeText(this, "Aun no existen parroquias registradas",
                     Toast.LENGTH_SHORT).show();
+
         }
-}*/
-    }}
+    }
+}

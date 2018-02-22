@@ -8,38 +8,39 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class ListaCiudadano extends AppCompatActivity {
+public class ListViewCiudadano extends AppCompatActivity {
+    private ListView lvC;
 
-    private ListView lv1;
-
-    private String[] ciudadano = null;
+    private String[] ciud = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_ciudadano);
-        /*lv1 =(ListView)findViewById(R.id.listaCiu);
+        setContentView(R.layout.activity_list_view_ciudadano);
+        lvC =(ListView)findViewById(R.id.listaCiu);
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
-                "ciudadano", null, 1);
+                "votacion", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
         //Cursor fila = bd.rawQuery( " select nombreReg from region " , null);
-        String [] campos = {"nombreCiud"};
-        Cursor c = bd.query("ciudadano", campos, null, null, null, null, null);
+        String [] campos = {"nombreCiudadano"};
+        Cursor c = bd.query("ciudadanos", campos, null, null, null, null, null);
         if (c.moveToFirst()) {
-            ciudadano = new String[c.getCount()];
+            ciud = new String[c.getCount()];
             int cont=0;
             do {
-                ciudadano[cont]= c.getString(0);
+                ciud[cont]= c.getString(0);
                 cont=cont+1;
             } while(c.moveToNext());
         }
-        bd.close();
-        if(ciudadano!=null){
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,ciudadano);
-            lv1.setAdapter(adapter);}
-        else{
 
+        if(ciud!=null) {
+
+            ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,ciud);
+            lvC.setAdapter(adapter2);
+        }
+        else{
             Toast.makeText(this, "Aun no existen ciudadanos registrados",
                     Toast.LENGTH_SHORT).show();
         }
-}*/
-    }}
+        bd.close();
+    }
+}
