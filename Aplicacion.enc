@@ -1,0 +1,119 @@
+#include <iostream>
+#include <stdlib.h> 
+
+using namespace std;
+
+/*
+	TECNOLOGIA EN ANALISIS DE SISTEMAS INFORMATICOS - PROYECTO FINAL DE PROGRMACION EN C
+	ORDENAMIENTO Y BUSQUEDA . por implementar para el segundo modulo de la materia
+	INGRESE ESTUDIANTES Y NOTAS CORRESPONDIENTES, SOBRE ESAS NOTAS CALCULAR PROMEDIO DE LOS ESTUDIANTES
+	ARREGLOS BIDIMNESIONALES ORDENALES, BUSQUEDA
+	*/
+
+
+	
+
+int main(){
+	int opcion=0;
+	char estudiantes[3][20]; //
+	float notas[3][4];
+
+	do{
+		system("color 14");
+		system("cls"); // limpiar la pantalla
+		cout<<endl<<"INGRESA UNA OPCION";
+		cout<<endl<<"1. Ingreso de estudiantes";
+		cout<<endl<<"2. Ver estudiantes registrados";
+		cout<<endl<<"3. Ingreso de notas";
+		cout<<endl<<"4. Ver notas estudiantes";
+		cout<<endl<<"5. Determinar Promedio notas ingresadas"; // realizado
+		cout<<endl<<"Ingresa un numero: ";
+		cin>>opcion;
+		
+		switch(opcion){
+			case 1:
+				system("cls");
+				cout<<"INGRESO DE ESTUDIANTES"<<endl;
+				fflush(stdin); // borre lo que tenga en memoria buffer (ENTER)
+				for(int i=0; i<3; i++){
+					cout<<endl<<"Ingresa el nombre del estudiante "<<i+1<<": ";
+					gets(estudiantes[i]);
+				}
+				break;
+			case 2:
+				system("cls");
+				cout<<"VER ESTUDIANTES"<<endl;
+				for(int i=0; i<3; i++){
+					cout<<endl<<"Estudiante "<<i+1<<": "<<estudiantes[i];
+				}
+				system("pause");
+				break;
+			case 3: 
+				system("cls");
+				cout<<"INGRESO NOTAS"<<endl;
+				fflush(stdin); 
+				for(int i=0; i<3; i++){
+					cout<<endl<<"Estudiante "<<estudiantes[i];
+					for(int j=0; j<4-1; j++){
+						cout<<endl<<"Ingresa la nota "<<j+1<<": ";
+						cin>>notas[i][j];
+					}	
+				}
+				system("pause"); // llenar despues ejecucion
+				break;
+			case 4: 
+				system("cls");
+				cout<<"VER NOTAS"<<endl;
+				for(int i=0; i<3; i++){
+					cout<<endl<<"Estudiante "<<estudiantes[i];
+					for(int j=0; j<4-1; j++){
+						cout<<endl<<"Nota "<<j+1<<": "<<notas[i][j];
+					}	
+				}
+				system("pause"); // llenar despues ejecucion
+				break;
+			case 5: 
+				system("cls");
+				cout<<"DETERMINAR PROMEDIO SOBRE NOTAS"<<endl;
+				float acum=0.0;
+				float prom=0.0;
+				// acum = nota+nota2+nota3;
+				// prom = acum/3;
+				// acum = acum+nota[i][j];
+				// acum += nota[i][j]; !!!!!!!!!!!!!!!!!!!!!!!!
+				for(int i=0; i<3; i++){
+					acum=0.0;
+					prom=0.0;
+					for(int j=0; j<4; j++){
+						acum = acum+notas[i][j];
+					}
+					prom=acum/(4-1);
+					notas[i][3]=prom; // asignar la nota del promedio para la posicion vacia
+				}
+				
+				// impirmir los promedios de cada estudiante
+				for(int i=0; i<3; i++){
+					cout<<endl<<"Estudiante "<<estudiantes[i];
+					for(int j=0; j<4; j++){
+						if(j==4-1){
+							cout<<endl<<"Promedio: "<<notas[i][j];
+							if(notas[i][j]<14.01){
+								cout<<endl<<"REPROBADO";
+							}else{
+								cout<<endl<<"APROBADO";
+							}
+						}else{
+							cout<<endl<<"Nota "<<j+1<<": "<<notas[i][j];
+						}
+					}	
+				}
+				system("pause"); // llenar despues ejecucion
+				break;
+		}
+		
+	}while(opcion!=0);
+	
+	return 1;
+}
+
+
